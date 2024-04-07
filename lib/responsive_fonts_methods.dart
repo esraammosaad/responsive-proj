@@ -7,8 +7,8 @@ double getResponsiveFontSize(BuildContext context, {required fontSize}) {
   double responsiveFont = fontSize * scaleFactor;
   double lowerLimit = fontSize * 0.80;
   double upperLimit = fontSize * 1.20;
-  responsiveFont.clamp(lowerLimit, upperLimit);
-  return responsiveFont;
+  return   responsiveFont.clamp(lowerLimit, upperLimit);
+
 }
 
 double getScaleFactor(BuildContext context) {
